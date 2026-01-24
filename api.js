@@ -51,15 +51,26 @@ function getUserbyId(id){
 // addUser({id:4, name: "Mughees", age: 20});
 // console.log(users)
 
-function addUser(name, age){
+
+function createUser(name, age){
     const newUser = {
-        id : users.length + 1,
-        name,
+        id: users.length + 1,
+        name, 
         age
     };
     users.push(newUser);
 }
-addUser("Mughees", 20)
+createUser("Ahsan", 25);
+console.log(users)
+// function addUser(name, age){
+//     const newUser = {
+//         id : users.length + 1,
+//         name,
+//         age
+//     };
+//     users.push(newUser);
+// }
+// addUser("Mughees", 20)
 // console.log(users)
 
 
@@ -97,4 +108,4 @@ function deleteUser(id){
     users = users.filter(user => user.id !== id);
 }
 deleteUser(1)
-console.log(users)
+// console.log(users)
